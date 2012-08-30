@@ -17,22 +17,56 @@ let vala_no_tab_space_error = 1
 " Minimum lines used for comment syncing (default 50)
 "let vala_minlines = 120
 
-set expandtab
-set ts=2
 set sw=2
+set bs=2                    " allow backspacing over everything in insert mode
+set autoindent                      " always set autoindenting on
+set cinkeys=0{,0},:,0#,!,!^F
 set smartindent
+set ignorecase
+set smartcase
+set ts=2
+set shiftround
+set shiftwidth=2
+set expandtab
+set ruler
+set showcmd
+set incsearch
+set scrolloff=2
+set wildmode=list:longest,full
+set showmatch matchtime=3
+set diffopt+=iwhite
+set history=50              " keep 50 lines of command line history
+set ruler                   " show the cursor position all the time
 
-nmap <A-Left> :tabp<CR>
-nmap <A-Right> :tabn<CR>
+nmap :W :w
+nmap :X :x
+nmap :Q :q
+
+" Paste toggle
+nnoremap \tp :set invpaste paste?<CR>
+nmap <F4> \tp
+imap <F4> <C-O>\tp
+set pastetoggle=<F4>
+
+highlight Search term=reverse  ctermbg=4 ctermfg=3
+highlight Comment ctermfg=darkcyan
+
+map <C-j> <C-w><Down><C-w>_
+map <C-k> <C-w><Up><C-w>_
+map <C-;> <C-w>=
+
+nmap <C-Left> :tabp<CR>
+nmap <C-Right> :tabn<CR>
+nmap <C-h> :tabp<CR>
+nmap <C-l> :tabn<CR>
 nmap <C-n> :Texplore<CR>
 
 set mouse=a
 set spell
 set switchbuf=usetab,newtab
 
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 call pathogen#infect()
-syntax on
-filetype plugin indent on
 
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
+let g:NERDTreeWinSize = 20
