@@ -62,7 +62,7 @@ nmap <C-l> :tabn<CR>
 nmap <C-n> :Texplore<CR>
 
 set mouse=a
-set spell
+"set spell
 set switchbuf=usetab,newtab
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
