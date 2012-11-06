@@ -51,6 +51,8 @@ set pastetoggle=<F4>
 highlight Search term=reverse  ctermbg=4 ctermfg=3
 highlight Comment ctermfg=darkcyan
 
+nmap j <C-w><Down><C-w>_
+nmap k <C-w><Up><C-w>_
 map <C-j> <C-w><Down><C-w>_
 map <C-k> <C-w><Up><C-w>_
 map <C-;> <C-w>=
@@ -60,8 +62,10 @@ nmap <C-Right> :tabn<CR>
 nmap <C-h> :tabp<CR>
 nmap <C-l> :tabn<CR>
 nmap <C-n> :Texplore<CR>
+nmap <M-Left> :tabp<CR>
+nmap <M-Right> :tabn<CR>
 
-set mouse=a
+"set mouse=a
 "set spell
 set switchbuf=usetab,newtab
 
@@ -70,3 +74,6 @@ map <Leader>n <plug>NERDTreeTabsToggle<CR>
 call pathogen#infect()
 
 let g:NERDTreeWinSize = 20
+
+set hlsearch
+set incsearch
