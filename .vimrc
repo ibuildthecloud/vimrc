@@ -1,3 +1,7 @@
+set rtp+=/home/darren/.local/go/misc/vim
+filetype plugin indent on
+syntax on
+
 autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
 
@@ -8,11 +12,11 @@ au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
 let vala_comment_strings = 1
 
 " Highlight space errors
-let vala_space_errors = 1
+"let vala_space_errors = 1
 " Disable trailing space errors
 "let vala_no_trail_space_error = 1
 " Disable space-tab-space errors
-let vala_no_tab_space_error = 1
+"let vala_no_tab_space_error = 1
 
 " Minimum lines used for comment syncing (default 50)
 "let vala_minlines = 120
