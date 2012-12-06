@@ -32,7 +32,6 @@ set ts=2
 set shiftround
 set shiftwidth=2
 set expandtab
-set ruler
 set showcmd
 set incsearch
 set scrolloff=2
