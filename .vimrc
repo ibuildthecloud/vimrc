@@ -54,8 +54,6 @@ set pastetoggle=<F4>
 highlight Search term=reverse  ctermbg=4 ctermfg=3
 highlight Comment ctermfg=darkcyan
 
-nmap j <C-w><Down><C-w>_
-nmap k <C-w><Up><C-w>_
 map <C-j> <C-w><Down><C-w>_
 map <C-k> <C-w><Up><C-w>_
 map <C-;> <C-w>=
