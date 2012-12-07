@@ -1,5 +1,5 @@
 set rtp+=/home/darren/.local/go/misc/vim
-filetype plugin indent on
+"filetype plugin indent on
 syntax on
 
 autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
@@ -78,3 +78,5 @@ let g:NERDTreeWinSize = 20
 
 set hlsearch
 set incsearch
+
+nmap <F8> :w<CR>:!py.test --pdb<CR>
