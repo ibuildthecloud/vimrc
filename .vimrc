@@ -79,4 +79,4 @@ let g:NERDTreeWinSize = 20
 set hlsearch
 set incsearch
 
-nmap <F8> :w<CR>:!py.test --pdb<CR>
+nmap <F8> :w<CR>:!py.test -v -s --pdb<CR>
