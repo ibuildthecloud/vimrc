@@ -21,16 +21,16 @@ let vala_comment_strings = 1
 " Minimum lines used for comment syncing (default 50)
 "let vala_minlines = 120
 
-set sw=2
+set sw=4
 set bs=2                    " allow backspacing over everything in insert mode
 set autoindent                      " always set autoindenting on
 set cinkeys=0{,0},:,0#,!,!^F
 set smartindent
 set ignorecase
 set smartcase
-set ts=2
+set ts=4
 set shiftround
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set showcmd
 set incsearch
@@ -80,3 +80,5 @@ set hlsearch
 set incsearch
 
 nmap <F8> :w<CR>:!py.test -v -s --pdb<CR>
+
+let @s='/void set4Y3jpncwRETURN/set3xiwithjoreturn this;'
